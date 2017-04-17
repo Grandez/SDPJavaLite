@@ -1,0 +1,34 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+          
+      <id>bin</id>
+      
+      <formats>
+        <format>jar</format>
+      </formats>
+      
+      <includeBaseDirectory>false</includeBaseDirectory>
+      
+      <moduleSets>
+      
+        <moduleSet>
+        
+<!--           Enable access to all projects in the current multimodule build! -->
+          <useAllReactorProjects>true</useAllReactorProjects>
+          
+<!--           Now, select which projects to include in this module-set. -->
+          <includes>
+            <include>com.jgg.sdp:SDPParserBase</include>
+            <include>com.jgg.sdp:SDPParserCics</include>            
+            <include>com.jgg.sdp:SDPParserCobol</include>
+            <include>com.jgg.sdp:SDPParserCopy</include>            
+            <include>com.jgg.sdp:SDPParserDB2</include>                        
+          </includes>
+          <binaries>
+            <outputDirectory>modules/maven-assembly-plugin</outputDirectory>
+            <unpack>true</unpack>
+          </binaries>
+        </moduleSet>
+      </moduleSets>
+    </assembly>

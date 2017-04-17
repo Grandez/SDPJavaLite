@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.jgg</groupId>
+  <artifactId>sdp</artifactId>
+  <version>5.0</version>
+  <packaging>pom</packaging>
+  <name>Serendipity</name>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <jdk.version>1.8</jdk.version>
+        
+    <base>sdp</base>
+    
+    <sdp.version>5.0</sdp.version>
+    <sdp.lib>P:\SDP\Lib</sdp.lib>
+    
+    <mq.dir>E:\Program Files\IBM\WebSphere MQ\java\lib</mq.dir>
+    
+    <junit.version>[3.8.2,)</junit.version>
+    <spring.version>[4.3.7.RELEASE,)</spring.version>
+    <spring.security.version>[4.0.2.RELEASE,)</spring.security.version>
+    <hibernate.version>4.3.5.Final</hibernate.version>
+    <javassist.version>3.19.0-GA</javassist.version>
+    <mysql.version>5.1.35</mysql.version>
+    <log4j.version>[1.2.17,)</log4j.version>
+    <slf4j.version>[1.7.7,)</slf4j.version>
+    <mq.version>[8.0.0.2,)</mq.version>
+    
+  </properties>
+  
+    <dependencies>
+    
+<!--     <dependency> -->
+<!--        <groupId>junit</groupId> -->
+<!--        <artifactId>junit</artifactId> -->
+<!--        <version>${junit.version}</version> -->
+<!--        <scope>test</scope> -->
+<!--     </dependency> -->
+    
+  </dependencies>
+  
+    <modules>
+
+    <!--  Parents  -->
+    <module>../SDPBase</module>
+    <module>../SDPParser</module>
+    <module>../SDPDBOffline</module>    
+        
+<!--         <module>../SDPParsers</module> -->
+        
+    
+<!--       <module>../parsers</module> -->
+      <module>../SDPCollector</module>
+<!--       <module>../SDPCore</module> -->
+<!--       <module>../SDPDbMySQL</module> -->
+<!--       <module>../SDPDbServices</module> -->
+<!--       <module>../SDPModule</module> -->
+
+<!--       <module>../SDPBatch</module> -->
+<!--       <module>../SDPTS</module>     	 -->
+<!--       <module>../SDPCall</module> -->
+      <module>../SDPRules</module>
+<!--       <module>../SDPSQL</module> -->
+        
+      <module>../SDPAnalyzer</module>
+<!--       <module>../SDPCalc</module> -->
+<!--       <module>../SDPTools</module> -->
+
+<!--       <module>../SDPLite</module> -->
+<!--         <module>../SDPCics</module>      -->
+<!--       <module>../SDPExcel</module>         -->
+        
+<!--     <module>SDPWebAdm</module> -->
+<!--     <module>SDPWebBase</module> -->
+<!--     <module>SDPWebClient</module> -->
+<!--     <module>SDPWebManager</module> -->
+
+
+    </modules>
+    
+</project>
